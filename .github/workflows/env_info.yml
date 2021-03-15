@@ -40,7 +40,7 @@ jobs:
       # get secret
       - name: get repo secrets
         run: |
-          echo $${{ secrets.MY_SECRET }}
-          echo $${{ secrets.ENV_SECRET }}
-          echo $${{ secrets.ENV_SECRET2 }}
+          echo ${{ secrets.MY_SECRET }}
+          echo ${{ secrets.ENV_SECRET }}
+          echo ${{ secrets.ENV_SECRET2 }}
 
