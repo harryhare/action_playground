@@ -39,6 +39,18 @@ jobs:
           pip --version
           which pip3
           pip3 --version
+
+      # get secret
+      - name: get github env
+        run: |
+          echo $CI
+          echo $GITHUB_WORKFLOW
+          echo $GITHUB_RUN_ID
+          echo $GITHUB_RUN_NUMBER
+          echo $GITHUB_ACTION
+          echo $GITHUB_ACTIONS
+          echo $GITHUB_ACTOR
+          echo $GITHUB_REPOSITORY
       # get secret
       - name: get repo secrets
         run: |
