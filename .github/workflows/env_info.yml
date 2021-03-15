@@ -28,6 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: get python env
         run: |
+          date
           pwd
           whoami
           uname -a
@@ -40,7 +41,7 @@ jobs:
           which pip3
           pip3 --version
 
-      # get secret
+      # get github env
       - name: get github env
         run: |
           echo $CI
