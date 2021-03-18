@@ -1,4 +1,4 @@
-name: 'dog bark every minute'
+name: 'dog bark every hour'
 
 on:
   push:
