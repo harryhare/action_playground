@@ -2,9 +2,8 @@ name: 'dog bark every hour'
 
 on:
   push:
-  schedule:
-  # 定时任务，在每天的5点推送天气信息到邮箱
-    - cron: '0 * * * *'
+#  schedule:
+#    - cron: '0 * * * *'
 
 jobs:
   test:
